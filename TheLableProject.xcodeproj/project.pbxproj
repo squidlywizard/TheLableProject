@@ -12,6 +12,7 @@
 		1401A974216F95360067F386 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1401A972216F95360067F386 /* Main.storyboard */; };
 		1401A976216F95370067F386 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1401A975216F95370067F386 /* Assets.xcassets */; };
 		1401A979216F95370067F386 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1401A977216F95370067F386 /* LaunchScreen.storyboard */; };
+		1401A989216F97BD0067F386 /* colorExchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1401A988216F97BD0067F386 /* colorExchange.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		1401A975216F95370067F386 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1401A978216F95370067F386 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1401A97A216F95370067F386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1401A988216F97BD0067F386 /* colorExchange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colorExchange.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,47 @@
 		1401A96D216F95360067F386 /* TheLableProject */ = {
 			isa = PBXGroup;
 			children = (
-				1401A96E216F95360067F386 /* AppDelegate.swift */,
-				1401A970216F95360067F386 /* ViewController.swift */,
-				1401A972216F95360067F386 /* Main.storyboard */,
-				1401A975216F95370067F386 /* Assets.xcassets */,
-				1401A977216F95370067F386 /* LaunchScreen.storyboard */,
-				1401A97A216F95370067F386 /* Info.plist */,
+				1401A985216F977C0067F386 /* Control */,
+				1401A984216F97730067F386 /* model */,
+				1401A982216F96E50067F386 /* ignore */,
+				1401A981216F96C80067F386 /* designer */,
 			);
 			path = TheLableProject;
+			sourceTree = "<group>";
+		};
+		1401A981216F96C80067F386 /* designer */ = {
+			isa = PBXGroup;
+			children = (
+				1401A972216F95360067F386 /* Main.storyboard */,
+				1401A977216F95370067F386 /* LaunchScreen.storyboard */,
+			);
+			path = designer;
+			sourceTree = "<group>";
+		};
+		1401A982216F96E50067F386 /* ignore */ = {
+			isa = PBXGroup;
+			children = (
+				1401A975216F95370067F386 /* Assets.xcassets */,
+				1401A96E216F95360067F386 /* AppDelegate.swift */,
+				1401A97A216F95370067F386 /* Info.plist */,
+			);
+			path = ignore;
+			sourceTree = "<group>";
+		};
+		1401A984216F97730067F386 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				1401A988216F97BD0067F386 /* colorExchange.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		1401A985216F977C0067F386 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				1401A970216F95360067F386 /* ViewController.swift */,
+			);
+			path = Control;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1401A989216F97BD0067F386 /* colorExchange.swift in Sources */,
 				1401A971216F95360067F386 /* ViewController.swift in Sources */,
 				1401A96F216F95360067F386 /* AppDelegate.swift in Sources */,
 			);
@@ -281,7 +317,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TheLableProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TheLableProject/ignore/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,7 +334,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TheLableProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TheLableProject/ignore/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
