@@ -13,7 +13,10 @@ public class mienColor {
 
   public func ColorChange() -> UIColor
   {
+    let redPercent : CGFloat = CGFloat (Double ((arc4random()) % 256) / 255.00)
+    let greenPercent : CGFloat = CGFloat (Double ((arc4random()) % 256) / 255.00)
+    let bleuPercent : CGFloat = CGFloat (Double ((arc4random()) % 256) / 255.00)
     
-      return UIColor (red: 4.4, green: 4.4, blue: 6.6, alpha: 40)
+    return UIColor(red: redPercent, green: greenPercent, blue : bleuPercent, alpha: CGFloat(100.00))
   }
 }

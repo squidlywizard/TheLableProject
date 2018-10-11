@@ -38,8 +38,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="Lsbrl" destination="xea-CB-iqI" id="Rda-eU-goK"/>
                         <outlet property="button" destination="oVQ-2M-twt" id="J2H-zs-wF0"/>
-                        <outlet property="lsbrl" destination="xea-CB-iqI" id="mVL-vc-rpR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

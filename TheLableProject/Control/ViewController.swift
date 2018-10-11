@@ -25,12 +25,13 @@ public class ViewController: UIViewController
 //fug
 
     @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var Lsbrl: UILabel!
     @IBAction func whenButtonClick(_ sender: UIButton)
     {
-        lsbrl.textColor = mienColor.ColorChange()
+        Lsbrl.textColor = theColor.ColorChange()
     }
     
-    @IBOutlet weak var lsbrl: UILabel!
+
     
     
 }
