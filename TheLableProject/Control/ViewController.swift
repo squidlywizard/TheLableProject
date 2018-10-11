@@ -32,6 +32,16 @@ public class ViewController: UIViewController
     }
     
 
+    @IBOutlet weak var redC: UISlider!
+    @IBOutlet weak var blueC: UISlider!
+    @IBOutlet weak var greenC: UISlider!
+    public func changeColor()
+    {
+        self.view.backgroundColor = UIColor(red: CGFloat(redC.value), green: CGFloat(greenC.value), blue: CGFloat(blueC.value), alpha: CGFloat(1.00))
+    }
+    @IBAction func colorupdate(_ sender: UISlider) {
+        changeColor()
+    }
     
     
 }
